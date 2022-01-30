@@ -26,7 +26,7 @@ To do this, I analyzed two different csv datafiles from a mock ride sharing comp
 
 After opening the data, I looked for null values and determined if it needed to be cleaned in any way.  I then used pd.merge() to merged the dataframes by city.  From this new dataframe, I used the groupby(), count(), and sum() functions to generate the total rides, total drivers, total fare, and then calcuated the average fare per ride, and average fare per driver, all dependent on city type.  I also used the map() function to format the column values to be displayed as dollar amounts with 2 decimal places and comma markers. See the table below.
 
-**insert table1 here**
+![This is an image](https://github.com/bartblack13/PyBer_Analysis/blob/main/analysis/Table1.png)
 
 I then used the groupby(), count(), and sum() functions to generate a new dataframe containing date of ride, city type, and fare, with formated fare values as above.  I then did the following:
 * reset the the index - reset_index() 
@@ -36,11 +36,11 @@ I then used the groupby(), count(), and sum() functions to generate a new datafr
 * resampled the dataframe and summed the fare values per week - df.resample("W") and sum()
 * create a new dataframe (see table below)
 
-**insert table2 here**
+![This is an image](https://github.com/bartblack13/PyBer_Analysis/blob/main/analysis/Table2.png)
 
 I used the object-oriented interface method to plot the resampled DataFrame using the df.plot() function, added lables and a title, then used the style.use('fivethirtyeight') to format the graph and generated a legend (See figure below)
 
-**insert table2 here**
+![This is an image](https://github.com/bartblack13/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png)
 
 ## Results: Using images from the summary DataFrame and multiple-line chart, describe the differences in ride-sharing data among the different city types.
 
